@@ -1,7 +1,13 @@
-// _document is only rendered on the server side and not on the client side
-// Event handlers like onClick can't be added to this file
+/*
+ * NICE HEADER
+ * File: _document.jsx
+ * Project: React-Next-Serverless Template
+ * File Created: Thursday, 5th March 2020 9:24:15 am
+ * Author: dyod (Daniel Saadia) (me@dyod.io)
+ * -----
+ * dyod
+ */
 
-// ./pages/_document.js
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 
 class MyDocument extends Document {
@@ -12,15 +18,15 @@ class MyDocument extends Document {
 
 	render() {
 		return (
-		<Html>
-			<Head>
-				<link rel="icon" type="image/x-icon" href="#"/>
-			</Head>
-			<body>
-				<Main />
-				<NextScript />
-			</body>
-		</Html>
+			<Html>
+				<Head>
+					<link rel="icon" type="image/x-icon" href="#"/>
+				</Head>
+				<body>
+					<Main />
+					<NextScript />
+				</body>
+			</Html>
 		);
 	}
 }
