@@ -1,7 +1,7 @@
 {
   "name": "fr",
   "version": "1.0.0",
-  "description": "Frontend of meet-my-tutor.com",
+  "description": "React-Next-Serverless Template",
   "repository": {
     "type": "git",
     "url": "https://github.com/Danilouli/React-Next-Serverless.git"
