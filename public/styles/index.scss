@@ -1,0 +1,103 @@
+@import './colors.scss';
+@import './fonts.scss';
+@import './misc.scss';
+@import './parts_variables.scss';
+@import './variables.scss';
+@import './shared_classes.scss';
+@import './tags.scss';
+@import 'node_modules/@fortawesome/fontawesome-svg-core/styles';
+
+
+html, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	font-family: inherit;
+}
+img, video, span {
+	border-radius: inherit;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	font-family: 'Arial';
+	line-height: 1;
+	position: relative;
+	height: 100vh;
+	width: 100vw;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.componentContainer {
+	margin: 10px 0;
+	padding: 20px 0;
+	border: solid 1px var(--light-transp-grey);
+}
+
+.qkit_iframe {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+}
+
+#__the_small_notification_top_container, #__the_small_notification_bottom_container {
+	left : calc(50vw - 265px);
+	position : absolute;
+	width : 570px;
+	max-width : 95vw;
+	z-index : 100;
+	display : flex;
+	flex-direction : column;
+	justify-content : center;
+	align-items : center;
+	@media #{$small-screen} {
+		width: 95vw;
+		left: 2.5vw;
+	}
+}
+
+#__the_small_notification_bottom_container {
+	bottom : 15px;
+}
+
+#__the_small_notification_top_container {
+	top : 15px;
+}

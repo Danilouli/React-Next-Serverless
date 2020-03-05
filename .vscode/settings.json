@@ -1,0 +1,44 @@
+{
+	"emmet.includeLanguages": {
+		"javascript": "javascriptreact"
+	},
+	"path-intellisense.mappings": {
+		"/" : "${workspaceRoot}",
+		"public": "${workspaceRoot}/public",
+		"components": "${workspaceRoot}/components",
+		"pages": "${workspaceRoot}/pages",
+	},
+	"javascript.validate.enable" : true,
+	"path-intellisense.absolutePathToWorkspace": true,
+	"path-intellisense.extensionOnImport": true,
+	"psi-header.changes-tracking": {
+		"autoHeader": "autoSave",
+		"enforceHeader": true
+	},
+	"psi-header.config": {
+		"author": "dyod (Daniel Saadia)",
+		"authorEmail": "me@dyod.io",
+		"company": "dyod",
+		"forceToTop": true
+	},
+	"psi-header.templates": [
+		{
+			"language": "*",
+			"template": [
+				"NICE HEADER",
+				"File: <<filename>>",
+				"Project: React-Next-Serverless Template",
+				"File Created: <<filecreated('dddd, Do MMMM YYYY h:mm:ss a')>>",
+				"Author: <<author>> (<<authoremail>>)",
+				"-----",
+				"<<company>>"
+			]
+		}
+	],
+	"[yaml]":  {
+		"editor.insertSpaces": true,
+		"editor.tabSize": 2,
+		"editor.autoIndent": false
+	}
+}
+

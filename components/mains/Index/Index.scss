@@ -1,0 +1,9 @@
+@import 'public/styles/variables.scss';
+
+.Index {
+	& .ind-{
+		&title {
+			color : orange;
+		}
+	}
+}

@@ -1,0 +1,109 @@
+:root {
+	--green : #51c088;
+	--dark-green : #29783f;
+	--a5grey : #a5a5a5;
+	--b9grey : #9b9b9b;
+	--grey : #9b9b9b;
+	--light-grey : #EAEAEA;
+	--black : #4a4a4a;
+	--extra-light-grey : #F6F9FC;
+	--transp-white : rgba(81, 192, 136, 0.05);
+	--transp-grey : rgba(155, 155, 155, 0.6);
+	--light-transp-grey : rgba(151, 151, 151, 0.2);
+	--blue:#39415f;
+	--option-blue : #498CD2;
+	--link-blue : #4a90e2;
+	--alt-link-blue : #7baee9;
+	--red : #d0021b;
+	--beige : #fbfcfc;
+	--strong-beige : #f1f6fe;
+	--yellow : #f1c40f;
+	--pale-yellow : #fceebf;
+	--pale-green : #daf6e0;
+	--pale-blue : #e7e5f5;
+	--light-yellow : #fffbe6;
+	--orange : #faad14;
+	--pastel-blue : #f1f6fe;
+	--pastel-red : #fdf1f1;
+	--light-red : #f2a396;
+}
+
+.bggrey {
+	background-color: var(--grey);
+}
+
+.bglight_transp_grey {
+	background-color: var(--light-transp-grey);
+}
+
+.bggred {
+	background-color: var(--red);
+}
+
+.bggreen {
+	background-color: var(--green);
+}
+
+.bgbeige {
+	background-color: var(--beige);
+}
+
+.bgst_beige {
+	background-color: var(--strong-beige);
+}
+
+.bgwhite {
+	background-color: white;
+}
+
+.bgpale_green {
+	background-color: var(--pale-green);
+}
+
+.bgpastel_blue {
+	background-color: var(--pastel-blue);
+}
+
+.cgreen {
+	color: var(--green);
+}
+
+.cyellow {
+	color: var(--yellow);
+}
+
+.cwhite {
+	color: white;
+}
+
+.cgrey {
+	color: var(--grey);
+}
+
+.ca5grey {
+	color : var(--a5grey);
+}
+
+.clight_grey {
+	color : var(--light-grey);
+}
+
+.cblue {
+	color: var(--blue);
+}
+
+.clink_blue {
+	color: var(--link-blue);
+}
+
+.cblack {
+	color: var(--black);
+}
+
+.cred { 
+	color: var(--red);
+}
+
+.calt_link_blue {
+	color: var(--alt-link-blue);
+}

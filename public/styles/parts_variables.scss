@@ -1,0 +1,7 @@
+@import './variables.scss';
+:root {
+	--home-navbar-height : 75px;
+	@media #{$small-screen} {
+		--home-navbar-height : 60px;
+	}
+}

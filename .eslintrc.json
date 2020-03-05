@@ -1,0 +1,42 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true,
+        "node": true
+    },
+    "extends": [
+        "eslint:recommended",
+		"plugin:react/recommended"
+    ],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2018,
+		"sourceType": "module"
+    },
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+		"max-lines-per-function": ["error", {"max": 70, "skipBlankLines" : true}],
+		"max-lines" : [2, 1500],
+		"react/prop-types" : 0,
+		"func-name-matching" : 2,
+		"max-len": [2, { "code": 115 }],
+		"no-extra-boolean-cast" : 0,
+		"react/react-in-jsx-scope" : 0
+	},
+	"overrides": [
+        {
+            "files": ["*.jsx"],
+            "rules": {
+                "max-lines-per-function": ["error", {"max": 200, "skipBlankLines" : true}]
+            }
+        }
+    ]
+}

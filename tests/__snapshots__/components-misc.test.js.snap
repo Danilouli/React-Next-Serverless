@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Link changes the class when hovered 1`] = `
+<a
+  className="normal linkus"
+  href="http://www.facebook.com"
+  lilko={2}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+  style={
+    Object {
+      "backgroundColor": "red",
+    }
+  }
+>
+  Facebook
+</a>
+`;
+
+exports[`Link changes the class when hovered 2`] = `
+<a
+  className="hovered linkus"
+  href="http://www.facebook.com"
+  lilko={2}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+  style={
+    Object {
+      "backgroundColor": "red",
+    }
+  }
+>
+  Facebook
+</a>
+`;
+
+exports[`Link changes the class when hovered 3`] = `
+<a
+  className="normal linkus"
+  href="http://www.facebook.com"
+  lilko={2}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+  style={
+    Object {
+      "backgroundColor": "red",
+    }
+  }
+>
+  Facebook
+</a>
+`;

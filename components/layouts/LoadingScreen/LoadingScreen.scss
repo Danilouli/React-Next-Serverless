@@ -1,0 +1,40 @@
+/*
+ * NICE HEADER
+ * File: LoadingScreen.scss
+ * Project: React-Next-Serverless Template
+ * File Created: Thursday, 5th March 2020 1:55:47 pm
+ * Author: dyod (Daniel Saadia) (me@dyod.io)
+ * -----
+ * dyod
+ */
+
+@import 'public/styles/variables.scss';
+
+.LoadingScreen {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    & span {
+        color: var(--green);
+    }
+    & img {
+        @media #{$small-screen} {
+            position: relative;
+            width: 70%;
+        }
+    } 
+    &[hidden=true] {
+        z-index: -1;
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+    }
+}

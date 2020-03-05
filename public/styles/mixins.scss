@@ -1,0 +1,8 @@
+@import './variables.scss';
+
+@mixin large_flex_container {
+	width : 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

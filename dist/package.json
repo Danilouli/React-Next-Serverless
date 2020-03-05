@@ -1,0 +1,25 @@
+{
+	"name": "depl",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"dev": "node --max-old-space-size=4096 `which serverless` offline --stage offline --port 3002"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"cookie-parser": "^1.4.4",
+		"dotenv": "^8.0.0",
+		"express": "^4.17.1",
+		"react": "^16.8.6",
+		"react-dom": "^16.8.6",
+		"serverless-http": "^2.0.2"
+	},
+	"devDependencies": {
+		"serverless-api-compression": "^1.0.1",
+		"serverless-domain-manager": "^3.2.6",
+		"serverless-offline": "^5.8.0"
+	}
+}

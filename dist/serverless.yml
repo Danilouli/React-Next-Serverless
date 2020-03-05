@@ -1,0 +1,39 @@
+service: react-next-serverless
+
+provider:
+    name: aws
+    runtime: nodejs8.10
+    stage: ${opt:stage, 'dev'}
+    region: eu-west-3
+    environment:
+        NODE_ENV : ${self:provider.stage}
+
+functions:
+    next_app :
+        handler: server.handler
+        events:
+            - http : ANY /
+            - http : 'ANY {proxy+}'
+
+plugins:
+    - serverless-api-compression
+    - serverless-offline
+    - serverless-domain-manager
+
+custom:
+  prodOrDevDomain:
+      prod:
+          domain: mydevdomain.domain.co
+          certificateArn: arn:aws:acm:xxxxx
+      dev:
+          domain: myproddomain.domain.co
+          certificateArn: arn:aws:acm:xxxxx
+  customDomain:
+      domainName: ${self:custom.prodOrDevDomain.${self:provider.stage}.domain}
+      certificateArn: ${self:custom.prodOrDevDomain.${self:provider.stage}.certificateArn}
+      basePath: ''
+      stage: ${self:provider.stage}
+      createRoute53Record: true
+      endpointType: regional
+  contentEncoding:
+    contentCompression: 100 # Minimum body size required for compression in bytes

@@ -1,0 +1,10 @@
+/node_modules/
+/.next/
+/.next/*
+.next/*
+dist/.next
+dist/.next/*
+dist/.next/*/**
+dist/node_modules
+dist/node_modules/*
+dist/node_modules/*/**
