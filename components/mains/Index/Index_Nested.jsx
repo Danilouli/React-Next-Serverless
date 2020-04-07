@@ -9,10 +9,10 @@
  */
 
 import {useContext} from 'react';
-import MainContext from '/components/contexts/MainContext.js';
+import IndexContext from '/components/contexts/IndexContext.js';
 
 const Index_Nested = () => {
-	const CTX = useContext(MainContext);
+	const CTX = useContext(IndexContext);
 	const {number, innerTexts} = CTX;
 	return (
 		<div className="Index_Nested ind-nested">

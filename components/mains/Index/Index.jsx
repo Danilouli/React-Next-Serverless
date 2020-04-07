@@ -9,12 +9,12 @@
  */
 
 import {useContext} from 'react';
-import MainContext from '/components/contexts/MainContext.js';
+import IndexContext from '/components/contexts/IndexContext.js';
 import Index_Nested from './Index_Nested.jsx';
 import './Index.scss';
 
 const Index = () => {
-	const CTX = useContext(MainContext);
+	const CTX = useContext(IndexContext);
 	const {number, innerTexts} = CTX;
 	return (
 		<div className="Index ind-">

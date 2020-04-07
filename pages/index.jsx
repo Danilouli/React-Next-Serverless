@@ -9,12 +9,14 @@
  */
 
 import Head from 'next/head';
-import {useEffect} from 'react';
+import {useEffect, useContext} from 'react';
+import Link from 'next/link';
 import {useContextState, useOnce} from '/public/tools/hooks.js';
 import {jsxizeHtmlObject} from '/public/scripts/dom.js';
 import {setLoginCookies, getDataWithCookies} from '/public/tools/network.js';
 import {loadingScript} from '/public/scripts/dom.js';
 import MainContext from '/components/contexts/MainContext.js';
+import IndexContext from '/components/contexts/IndexContext.js';
 import {innerTexts, metas} from '/public/data/index_data.js';
 import LoadingScreen from '/components/layouts/LoadingScreen/LoadingScreen.jsx';
 import Layout from '/components/layouts/Layout/Layout.jsx';
@@ -31,9 +33,11 @@ const IndexPage = props => {
 	const ctxVal = useContextState({
 		number : 1
 	});
+	//Main Context is hared between pages in the shared property (and we can change shared state with shared[key].set)
+	const mainContext = useContext(MainContext);
 	try {
 		return(
-			<MainContext.Provider value={{...ctxVal, ...props, innerTexts}}>
+			<IndexContext.Provider value={{...ctxVal, ...props, innerTexts}}>
 				<Layout>
 					<Head>
 						<title>Sample Index - React-Next-Serverless template</title>
@@ -44,8 +48,12 @@ const IndexPage = props => {
 					</Head>
 					<LoadingScreen/>
 					<Index/>
+					<div onClick={()=>mainContext.shared.number.set(Math.floor(Math.random()*100))}>
+						AA : {mainContext.shared.number.value}
+					</div>
+					<Link href='/otherpage'><a>Other Page</a></Link>
 				</Layout>
-			</MainContext.Provider>
+			</IndexContext.Provider>
 		);	
 	}
 	catch (err) {
