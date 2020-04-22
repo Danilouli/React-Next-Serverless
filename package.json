@@ -30,7 +30,7 @@
     "dotenv": "^8.2.0",
     "immutable": "^4.0.0-rc.12",
     "lodash": "^4.17.15",
-    "next": "^9.1.5",
+    "next": "^9.3.2",
     "next-images": "^1.2.0",
     "node-sass": "^4.13.1",
     "prop-types": "^15.7.2",
